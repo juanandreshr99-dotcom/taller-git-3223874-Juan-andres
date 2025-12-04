@@ -8,3 +8,10 @@ export function agregarItem(texto) {
 }
 
 console.log("App lista!");
+
+const boton = document.getElementById("btn-agregar");
+if (boton) {
+  boton.addEventListener("click", () => {
+    agregarItem("Nuevo item");
+  });
+}
