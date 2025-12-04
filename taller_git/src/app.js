@@ -8,5 +8,6 @@ function agregarItem(texto) {
 }
 
 document.getElementById("btnAgregar").addEventListener("click", () => {
-  agregarItem("Nuevo item");
+  const texto = prompt("Ingresa un texto:");
+  if (texto) agregarItem(texto);
 });
